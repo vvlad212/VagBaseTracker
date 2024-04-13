@@ -23,7 +23,7 @@ async def cmd_repair_text(message: Message, state: FSMContext):
 
 
 # Repair
-@state_router.message(ServiceState.auto_model)
+@state_router.message(RepairState.auto_model)
 async def cmd_repair_text(message: Message, state: FSMContext):
     await state.update_data(auto_model=message.text)
     await state.set_state(RepairState.user_text)
