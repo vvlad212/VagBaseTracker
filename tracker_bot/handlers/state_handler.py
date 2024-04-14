@@ -2,7 +2,7 @@ from aiogram import F, Router
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 
-from keybords.inline_keyboard import send_task_button
+from keyboards.inline_keyboard import send_task_button
 from state.repair_state import RepairState, UserState, ServiceState
 
 state_router = Router()

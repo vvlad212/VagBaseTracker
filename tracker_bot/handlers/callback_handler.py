@@ -7,7 +7,7 @@ from handlers.message_handler import cmd_start
 from tracker_client import get_client
 from config import config
 from state.repair_state import RepairState, ServiceState
-from keybords.inline_keyboard import back_to_menu_button
+from keyboards.inline_keyboard import back_to_menu_button
 
 callback_router = Router()
 tracker_client = get_client.get_tracker_client(config.tracker_token, config.tracker_org_id)

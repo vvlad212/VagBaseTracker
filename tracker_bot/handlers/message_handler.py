@@ -1,8 +1,8 @@
 from aiogram.types import Message
 from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
-from keybords import reply_keyboard as rp_kb
-from keybords import inline_keyboard as in_kb
+from keyboards import reply_keyboard as rp_kb
+from keyboards import inline_keyboard as in_kb
 from loguru import logger
 
 message_router = Router()
