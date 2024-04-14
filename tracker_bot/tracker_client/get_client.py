@@ -15,7 +15,7 @@ def check_token(token: str, org_id: str) -> bool:
     if not response.status_code == HTTPStatus.OK:
         logger.error("Token is not valid")
         return False
-    logger.error("Token is valid")
+    logger.info("Token is valid")
     return True
 
 
